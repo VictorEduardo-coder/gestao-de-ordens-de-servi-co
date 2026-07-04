@@ -1,0 +1,22 @@
+# Compiled class files
+*.class
+*.ctxt
+
+# Log files
+*.log
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# Build output
+bin/
+
+# BlueJ project files (gerados automaticamente pela IDE)
+package.bluej
+
+# DLLs nativas (específicas do SO de cada dev, não devem ir no repositório)
+lib/*.dll
+
+# Arquivos pessoais do Eclipse que não precisam de versionamento
+.settings/
