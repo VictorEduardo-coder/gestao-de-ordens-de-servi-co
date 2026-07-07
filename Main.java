@@ -23,7 +23,7 @@ public class Main extends Application {
 			primaryStage.setResizable(true); // permitir maximizar e redimensionar
 			primaryStage.setTitle("GestOS - Sistema de Gestão de Ordens de Serviço");
 			
-			Image icone = new Image(getClass().getResourceAsStream("/resources/images/logotipoSemTexto.png"));
+			Image icone = new Image(getClass().getResourceAsStream("/resources/images/logotipoSemTextoBranco.png"));
 
 			primaryStage.getIcons().add(icone); // adicionar icone
 			

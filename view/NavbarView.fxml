@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="96.0" prefWidth="600.0" style="-fx-background-color: #001C54;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NavbarController">
+   <left>
+      <HBox prefHeight="109.0" prefWidth="409.0" style="-fx-padding: 10;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="hamburger" id="hamburger" fitHeight="42.0" fitWidth="40.0" onMouseClicked="#handleHamburgerClick" pickOnBounds="true" preserveRatio="true" styleClass="iconsmall">
+               <image>
+                  <Image url="@../resources/images/menuhamburguer.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets top="25.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="156.0" fitWidth="338.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+               <image>
+                  <Image url="@../resources/images/logotipoSemTextoBranco.png" />
+               </image>
+            </ImageView>
+            <BorderPane prefHeight="89.0" prefWidth="233.0">
+               <center>
+                  <VBox prefHeight="89.0" prefWidth="242.0" style="-fx-alignment: left; -fx-padding: 12;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label id="titulo_principal" prefHeight="47.0" prefWidth="186.0" text="GestOS" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="233.0" text="Sistema de Gestão de Ordens de Serviço" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </HBox>
+   </left>
+</BorderPane>
